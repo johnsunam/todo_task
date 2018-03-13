@@ -13,7 +13,7 @@ class Dashboard extends Component {
         <Header style={{width: '100%' }}>
           <h2 className='header-title'> Todo Task </h2>
         </Header>
-        <Content style={{ padding: '0 50px', marginTop: 64 }}>
+        <Content style={{ padding: '0 50px', marginTop: 64,  minHeight: 500  }}>
          {this.props.children}
         </Content>
       </Layout>

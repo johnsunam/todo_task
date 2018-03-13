@@ -44,7 +44,7 @@ class ModalComponent extends Component {
     render () {
         return <div> 
                 <Button type="primary" onClick={this.showModal}><Icon type="plus-circle-o" /></Button>
-                <CommonModalForm ref={this.saveFormRef} handleCancel={ this.handleCancel } handleOk = {this.handleOk} visible={this.state.visible}  />
+                <CommonModalForm ref={this.saveFormRef} handleCancel={ this.handleCancel } {...this.props} handleOk = {this.handleOk} visible={this.state.visible}  />
         </div>
     }
 }

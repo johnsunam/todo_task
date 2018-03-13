@@ -13,7 +13,7 @@ class App extends Component {
         <Dashboard>
           <Switch>
           <Route exact path={"/"} component={Categories} />
-          <Route path={"/category"} component={ Category } />
+          <Route path={"/:category"} component={ Category } />
           </Switch>
         </Dashboard>
       </Router>
