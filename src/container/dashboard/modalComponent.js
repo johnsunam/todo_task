@@ -23,8 +23,11 @@ class ModalComponent extends Component {
         if (err) {
             return;
         }
-        this.props.addCategory(values)
-        console.log('Received values of form: ', values);
+        if(this.props.edit){
+            values.id = this.props.task.id;
+            values.done = this.props.task.done;
+        }
+        this.props.addCategory(values);
         form.resetFields();
         this.setState({ visible: false });
         });
@@ -43,7 +46,7 @@ class ModalComponent extends Component {
 
     render () {
         return <div> 
-                <Button type="primary" onClick={this.showModal}><Icon type="plus-circle-o" /></Button>
+                {this.props.edit ?<a onClick={this.showModal}>edit</a>:<Button type="primary" onClick={this.showModal}><Icon type="plus-circle-o" /></Button>}
                 <CommonModalForm ref={this.saveFormRef} handleCancel={ this.handleCancel } {...this.props} handleOk = {this.handleOk} visible={this.state.visible}  />
         </div>
     }
