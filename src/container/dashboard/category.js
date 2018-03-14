@@ -7,7 +7,7 @@ import ModalComponent from './modalComponent';
 import moment from 'moment';
 import { editCategory } from '../../actions/category';
 import  TaskList  from './taskListing';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 
 class Category extends Component {
@@ -18,9 +18,10 @@ class Category extends Component {
         this.onDelete = this.onDelete.bind(this);
         this.onEdit = this.onEdit.bind(this);
     }
-    componentDidMount() {
+    componentWillMount() {
+
         let category = _.findWhere(this.props.categories,{id: parseInt(this.props.match.params.category)});
-        this.props.setCategory(category);
+        category ?this.props.setCategory(category):this.props.history.push('/');
     }
 
     addTodo (data) {
