@@ -11,6 +11,7 @@
     "expand-range": "^2.0.1",
     "filename-regex": "^2.0.1",
     "for-own": "^1.0.0",
+    "glob": "^7.1.2",
     "graceful-fs": "^4.1.11",
     "has-ansi": "^3.0.0",
     "history": "^4.7.2",
