@@ -32,7 +32,6 @@
     "os-tmpdir": "^1.0.2",
     "parse-glob": "^3.0.4",
     "path-is-absolute": "^1.0.1",
-    "path-to-regexp": "^2.2.0",
     "preserve": "^0.2.0",
     "randomatic": "^3.0.0",
     "react": "^16.2.0",
