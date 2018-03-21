@@ -8,6 +8,7 @@
     "anymatch": "^2.0.0",
     "async-each": "^1.0.1",
     "chalk": "^2.3.2",
+    "filename-regex": "^2.0.1",
     "graceful-fs": "^4.1.11",
     "has-ansi": "^3.0.0",
     "history": "^4.7.2",
