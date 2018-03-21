@@ -8,6 +8,7 @@
     "anymatch": "^2.0.0",
     "async-each": "^1.0.1",
     "chalk": "^2.3.2",
+    "chokidar": "^2.0.2",
     "expand-range": "^2.0.1",
     "filename-regex": "^2.0.1",
     "for-own": "^1.0.0",
