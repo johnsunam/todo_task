@@ -5,6 +5,7 @@
   "dependencies": {
     "ansi-regex": "^3.0.0",
     "antd": "^3.2.3",
+    "async-each": "^1.0.1",
     "chalk": "^2.3.2",
     "graceful-fs": "^4.1.11",
     "has-ansi": "^3.0.0",
