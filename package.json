@@ -23,6 +23,7 @@
     "mkdirp": "^0.5.1",
     "moment": "^2.21.0",
     "object.omit": "^3.0.0",
+    "parse-glob": "^3.0.4",
     "preserve": "^0.2.0",
     "randomatic": "^3.0.0",
     "react": "^16.2.0",
