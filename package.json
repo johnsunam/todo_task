@@ -51,7 +51,7 @@
   },
   "scripts": {
     "build": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors",
-    "start": "node ./src/app.js",
+    "start": "node app.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
