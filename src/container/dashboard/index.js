@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router';
+import { withRouter } from 'react-router-dom';
 import { Layout , Menu, Breadcrumb, Card, Row, Col } from 'antd';
 import  Categories  from './categories';
 import Category from './category';
