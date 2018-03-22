@@ -47,11 +47,14 @@
     "regex-cache": "^0.4.4",
     "source-map": "^0.7.2",
     "strip-ansi": "^4.0.0",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "webpack": "^1.12.14"
+    
   },
   "scripts": {
     "build": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors",
     "start": "node app.js",
+    "postinstall": "npm run builds",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
@@ -74,7 +77,6 @@
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.6",
-    "webpack": "^1.12.14",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.10.0"
   }
