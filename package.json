@@ -54,7 +54,6 @@
   "scripts": {
     "build": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors",
     "start": "node app.js",
-    "postinstall": "npm run builds",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
